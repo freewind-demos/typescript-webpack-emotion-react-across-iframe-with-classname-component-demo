@@ -1,7 +1,9 @@
-TypeScript React "webpack-bundle-analyzer" Demo
+TypeScript Webpack "@emotion/react" across iframe Demo
 =================================
 
-对webpack生成的bundle文件进行分析，图形化方式看到其内容及占比
+在webpack下使用@emotion/react + @emotion/cache将某个使用了emotion的组件跨iframe渲染，保持css样式正确。
+
+
 
 ```
 npm install

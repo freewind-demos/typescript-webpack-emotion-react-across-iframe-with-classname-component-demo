@@ -3,9 +3,11 @@
     "strict": true,
     "target": "es6",
     "module": "commonjs",
-    "jsx": "react",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    // NOTE following config are required for the 'css' attribute in react
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react"
   },
   "exclude": [
     "node_modules"

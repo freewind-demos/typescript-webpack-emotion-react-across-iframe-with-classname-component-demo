@@ -1,11 +1,13 @@
-import {css} from '@emotion/react'
+import { ClassNames } from '@emotion/react';
 
-import React, {FC} from 'react';
+import React, { FC, useCallback } from 'react';
 
 type Props = {};
 
 export const Text: FC<Props> = ({}) => {
-    return <div>
-        <h1 css={css`color: red`}>Hello React</h1>
-    </div>;
+    return <ClassNames>
+        {useCallback(({css}) => <div>
+            <h1 className={css`color: red`}>Hello React</h1>
+        </div>, [])}
+    </ClassNames>;
 }

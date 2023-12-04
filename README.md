@@ -1,9 +1,11 @@
-TypeScript Webpack "@emotion/react" across iframe Demo
+TypeScript Webpack "@emotion/react" across iframe with "ClassNames" component Demo
 =================================
 
-在webpack下使用@emotion/react + @emotion/cache将某个使用了emotion的组件跨iframe渲染，保持css样式正确。
+想跨window但不想用emotion/react提供的 `css` attribute，可以用提供的 `ClassNames`组件来获取 `css`
 
+但是这种方式会让我们的styles只能被包在view里，多的话很难看。它如果提供一个hook会更好。
 
+所以也许我们还是要自己用react的context实现一个hook
 
 ```
 npm install
